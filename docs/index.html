@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L&M DriveLab | Exames para Instrutores de Condução</title>
+  <meta name="description" content="Sistema moderno de exames e treino para preparação de Instrutores de Condução.">
+  <link rel="icon" href="assets/icons/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+</head>
+
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/logo.png" alt="L&M DriveLab" class="brand-logo">
+        <div>
+          <p class="eyebrow">Preparação Profissional - Leandro Jesus e Marcelo Lóio</p>
+          <h1>L&M DriveLab</h1>
+        </div>
+      </div>
+      <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="topbarNav"
+        aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div id="topbarNav" class="topbar-nav">
+        <nav class="topbar-links" aria-label="Navegação principal">
+          <button class="nav-link" type="button" data-dashboard-section="home">Início</button>
+          <button class="nav-link" type="button" data-dashboard-section="setup">Realizar exame</button>
+          <button class="nav-link" type="button" data-dashboard-section="stats">Estatísticas</button>
+          <button class="nav-link" type="button" data-dashboard-section="library">Biblioteca</button>
+          <button class="nav-link" type="button" data-dashboard-section="favorites">Favoritos</button>
+        </nav>
+        <div class="topbar-actions">
+          <span id="userBadge" class="user-badge is-hidden"></span>
+          <button id="themeToggle" class="ghost-btn" type="button" aria-label="Alternar tema">Tema</button>
+          <button id="resumeExamBtn" class="ghost-btn is-hidden" type="button">Retomar exame</button>
+          <button id="logoutBtn" class="ghost-btn is-hidden" type="button">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="app"></main>
+  </div>
+
+  <template id="loadingTemplate">
+    <section class="panel hero loading-state">
+      <div class="spinner"></div>
+      <div>
+        <h2>A carregar a base de perguntas</h2>
+        <p>A preparar o sistema de exames e estatísticas.</p>
+      </div>
+    </section>
+  </template>
+
+  <script type="module" src="js/app.js">
+
+  </script>
+  <script>
+    if ("serviceWorker" in navigator) {
+
+      window.addEventListener("load", () => {
+
+        Promise.all([
+          navigator.serviceWorker.getRegistrations().then((registrations) =>
+            Promise.all(registrations.map((registration) => registration.unregister()))
+          ),
+          caches.keys().then((cacheNames) =>
+            Promise.all(cacheNames.map((cacheName) => caches.delete(cacheName)))
+          ),
+        ])
+          .then(() => navigator.serviceWorker.register("service-worker.js"))
+          .then(registration => {
+
+            console.log("PWA ativa:", registration);
+
+          })
+          .catch(error => {
+
+            console.log("Erro SW:", error);
+
+          });
+
+      });
+
+    }
+  </script>
+</body>
+
+</html>

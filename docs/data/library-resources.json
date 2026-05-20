@@ -1,0 +1,90 @@
+[
+    {
+        "id": "resource-18038f3da747",
+        "title": "Sequencialidade do ensino teórico",
+        "type": "summary",
+        "category": "Resumo Bernardo",
+        "description": "",
+        "url": "./resumos/20260520-225221-sequencialidade-do-ensino-te-orico-ed04d4.pdf",
+        "filename": "20260520-225221-sequencialidade-do-ensino-te-orico-ed04d4.pdf",
+        "createdAt": 1779310341283,
+        "createdBy": "leandro"
+    },
+    {
+        "id": "resource-c1940ab45183",
+        "title": "102B Resumo RHLC",
+        "type": "summary",
+        "category": "Resumo Bernardo",
+        "description": "",
+        "url": "./resumos/20260520-225215-102b-resumo-rhlc-69aa4d.pdf",
+        "filename": "20260520-225215-102b-resumo-rhlc-69aa4d.pdf",
+        "createdAt": 1779310335880,
+        "createdBy": "leandro"
+    },
+    {
+        "id": "resource-6c0cb5d47bf4",
+        "title": "Veículos autónomos e conectados",
+        "type": "summary",
+        "category": "Resumo Bernardo",
+        "description": "Resumos bernardo",
+        "url": "./resumos/20260520-225157-ve-iculos-aut-onomos-e-conectados-490ee2.pdf",
+        "filename": "20260520-225157-ve-iculos-aut-onomos-e-conectados-490ee2.pdf",
+        "createdAt": 1779310317601,
+        "createdBy": "leandro"
+    },
+    {
+        "id": "resource-32c0d088cf37",
+        "title": "Portaria185_2015",
+        "type": "pdf",
+        "category": "Legislação",
+        "description": "",
+        "url": "./pdfs/20260520-224714-portaria-185-2015.pdf",
+        "filename": "20260520-224714-portaria-185-2015.pdf",
+        "createdAt": 1779310034437,
+        "createdBy": "leandro"
+    },
+    {
+        "id": "resource-b7c14fcc3cf8",
+        "title": "Portaria1_2024",
+        "type": "pdf",
+        "category": "Legislação",
+        "description": "",
+        "url": "./pdfs/20260520-224700-portaria-1-2024.pdf",
+        "filename": "20260520-224700-portaria-1-2024.pdf",
+        "createdAt": 1779310020065,
+        "createdBy": "leandro"
+    },
+    {
+        "id": "resource-b172f9f9c3a4",
+        "title": "ManualRJEC",
+        "type": "pdf",
+        "category": "Legislação",
+        "description": "",
+        "url": "./pdfs/20260520-224649-manual-rjec.pdf",
+        "filename": "20260520-224649-manual-rjec.pdf",
+        "createdAt": 1779310009287,
+        "createdBy": "leandro"
+    },
+    {
+        "id": "resource-12e42b60ea6f",
+        "title": "Lei14-2014",
+        "type": "pdf",
+        "category": "Legislação",
+        "description": "",
+        "url": "./pdfs/20260520-224640-lei-14-2014.pdf",
+        "filename": "20260520-224640-lei-14-2014.pdf",
+        "createdAt": 1779310000468,
+        "createdBy": "leandro"
+    },
+    {
+        "id": "resource-57d28493675a",
+        "title": "TransitoSegurancaRodoviaria",
+        "type": "pdf",
+        "category": "Legislação",
+        "description": "Berta",
+        "url": "./pdfs/20260520-224606-tr-ansito-e-seguranca-rodovi-aria.pdf",
+        "filename": "20260520-224606-tr-ansito-e-seguranca-rodovi-aria.pdf",
+        "createdAt": 1779309966980,
+        "createdBy": "leandro"
+    }
+]

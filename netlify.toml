@@ -1,0 +1,3 @@
+[build]
+command = "node scripts/generate-library-resources.mjs"
+publish = "project"
